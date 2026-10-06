@@ -21,7 +21,7 @@ Las comprobaciones se realizaron sobre la versión local servida por HTTP en un 
 | 13 | Acciones posteriores | Aprobada | `Crear otra solicitud` restableció el formulario; `Volver al catálogo` es un enlace anclado válido. |
 | 14 | Recorrido con teclado | Aprobada con alcance técnico | Controles nativos accesibles por teclado; Escape cierra el diálogo y el foco vuelve al botón que lo abrió. Falta prueba con usuarios/lector de pantalla. |
 | 15 | Sin desbordamiento (320/390/768/1440 px) | Aprobada | En los cuatro anchos `scrollWidth` no superó `clientWidth`. Se corrigió el ancho mínimo tras la primera revisión. |
-| 16 | Carga bajo ruta del repositorio | Pendiente de publicación | Se comprobará en la URL final de GitHub Pages. Todas las rutas del proyecto son relativas. |
+| 16 | Carga bajo ruta del repositorio | Aprobada | `https://cangelesluna.github.io/dulce-horno-web/` cargó el título correcto, 6 tarjetas e ilustraciones; el filtro Postres devolvió 3 resultados y no hubo errores de consola. |
 
 ## Comprobaciones adicionales
 

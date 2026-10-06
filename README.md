@@ -52,8 +52,8 @@ El formulario valida producto, cantidad entera y una fecha no anterior al día l
 
 ## Repositorio y publicación
 
-- Repositorio: se añadirá tras crear el repositorio público.
-- Sitio: se añadirá tras confirmar el despliegue de GitHub Pages.
+- Repositorio: [github.com/cangelesluna/dulce-horno-web](https://github.com/cangelesluna/dulce-horno-web)
+- Sitio publicado: [cangelesluna.github.io/dulce-horno-web](https://cangelesluna.github.io/dulce-horno-web/)
 
 Para actualizar el sitio después de publicarlo:
 
