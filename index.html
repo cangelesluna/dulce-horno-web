@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce Horno | Panadería artesanal — Proyecto educativo</title>
+  <meta name="description" content="Proyecto educativo ficticio de una panadería artesanal: explora productos y simula una solicitud sin compras ni pagos reales.">
+  <meta name="theme-color" content="#17365D">
+  <meta property="og:title" content="Dulce Horno | Proyecto educativo">
+  <meta property="og:description" content="Catálogo demostrativo y simulación local de solicitudes para una panadería artesanal ficticia.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Dulce Horno, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">DH</span>
+        <span>Dulce Horno</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menú</span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+
+      <nav id="menu-principal" class="main-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#como-encargar">Cómo encargar</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a href="#solicitud">Contacto</a>
+        <a class="button button-small" href="#solicitud">Solicitar pedido</a>
+      </nav>
+    </div>
+  </header>
+
+  <noscript>
+    <div class="noscript">El contenido puede leerse sin JavaScript, pero los filtros, el detalle interactivo y la simulación de solicitud requieren que esté activado.</div>
+  </noscript>
+
+  <main id="contenido">
+    <section id="inicio" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hecho para compartir</p>
+          <h1>Panadería y pastelería artesanal</h1>
+          <p class="hero-lead">Explora nuestros panes, tortas y postres. Consulta sus detalles y precios referenciales y completa una solicitud de prueba.</p>
+          <div class="button-row">
+            <a class="button" href="#catalogo">Ver catálogo</a>
+            <a class="button button-secondary" href="#solicitud">Solicitar pedido</a>
+          </div>
+          <p class="notice-inline">Proyecto educativo ficticio. Sin ventas ni pagos en línea.</p>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/images/hero-panaderia.svg" width="720" height="560" alt="Ilustración de panes y postres sobre una mesa de panadería">
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section section-white" aria-labelledby="catalogo-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Catálogo demostrativo</p>
+          <h2 id="catalogo-titulo">Encuentra algo para compartir</h2>
+          <p>Compara nuestras opciones y consulta sus detalles. Los productos y precios son demostrativos.</p>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="filter-group" role="group" aria-label="Filtrar por categoría">
+            <button type="button" class="filter-button is-active" data-category="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filter-button" data-category="panes" aria-pressed="false">Panes</button>
+            <button type="button" class="filter-button" data-category="tortas" aria-pressed="false">Tortas</button>
+            <button type="button" class="filter-button" data-category="postres" aria-pressed="false">Postres</button>
+          </div>
+          <div class="search-field">
+            <label for="buscar-producto">Buscar producto</label>
+            <input id="buscar-producto" type="search" autocomplete="off" placeholder="Ejemplo: chocolate">
+          </div>
+        </div>
+
+        <p id="catalog-status" class="sr-only" aria-live="polite"></p>
+        <div id="product-grid" class="product-grid">
+          <article class="product-card" data-id="masa-madre" data-category="panes" data-search="pan de masa madre panes corteza crujiente miga suave">
+            <img src="assets/images/pan-masa-madre.svg" width="640" height="440" alt="Ilustración referencial de un pan de masa madre" loading="lazy">
+            <div class="card-body"><p class="category">Panes</p><h3>Pan de masa madre</h3><p>Pan de corteza crujiente y miga suave, ideal para compartir en la mesa.</p><p class="price">S/ 12.00 <span>por unidad</span></p><div class="card-actions"><button class="button button-secondary detail-button" type="button" data-product="masa-madre">Ver detalle</button><button class="button request-button" type="button" data-product="masa-madre">Solicitar pedido</button></div></div>
+          </article>
+          <article class="product-card" data-id="croissant" data-category="panes" data-search="croissant de mantequilla panes masa laminada desayuno bebida">
+            <img src="assets/images/croissant.svg" width="640" height="440" alt="Ilustración referencial de un croissant de mantequilla" loading="lazy">
+            <div class="card-body"><p class="category">Panes</p><h3>Croissant de mantequilla</h3><p>Masa laminada de textura ligera, pensada para acompañar el desayuno o una bebida.</p><p class="price">S/ 5.00 <span>por unidad</span></p><div class="card-actions"><button class="button button-secondary detail-button" type="button" data-product="croissant">Ver detalle</button><button class="button request-button" type="button" data-product="croissant">Solicitar pedido</button></div></div>
+          </article>
+          <article class="product-card" data-id="torta-chocolate" data-category="tortas" data-search="torta de chocolate tortas reuniones ocasiones especiales">
+            <img src="assets/images/torta-chocolate.svg" width="640" height="440" alt="Ilustración referencial de una torta de chocolate" loading="lazy">
+            <div class="card-body"><p class="category">Tortas</p><h3>Torta de chocolate</h3><p>Torta de chocolate para compartir en reuniones y ocasiones especiales.</p><p class="price">S/ 65.00 <span>por torta</span></p><div class="card-actions"><button class="button button-secondary detail-button" type="button" data-product="torta-chocolate">Ver detalle</button><button class="button request-button" type="button" data-product="torta-chocolate">Solicitar pedido</button></div></div>
+          </article>
+          <article class="product-card" data-id="pie-limon" data-category="postres" data-search="pie de limon postres base masa relleno dulce citrico">
+            <img src="assets/images/pie-limon.svg" width="640" height="440" alt="Ilustración referencial de un pie de limón" loading="lazy">
+            <div class="card-body"><p class="category">Postres</p><h3>Pie de limón</h3><p>Postre con base de masa y relleno de limón, de sabor dulce y cítrico.</p><p class="price">S/ 30.00 <span>por pie</span></p><div class="card-actions"><button class="button button-secondary detail-button" type="button" data-product="pie-limon">Ver detalle</button><button class="button request-button" type="button" data-product="pie-limon">Solicitar pedido</button></div></div>
+          </article>
+          <article class="product-card" data-id="alfajor" data-category="postres" data-search="alfajor de maicena postres tapas suaves relleno dulce">
+            <img src="assets/images/alfajor.svg" width="640" height="440" alt="Ilustración referencial de alfajores de maicena" loading="lazy">
+            <div class="card-body"><p class="category">Postres</p><h3>Alfajor de maicena</h3><p>Dos tapas suaves de maicena con relleno dulce.</p><p class="price">S/ 3.00 <span>por unidad</span></p><div class="card-actions"><button class="button button-secondary detail-button" type="button" data-product="alfajor">Ver detalle</button><button class="button request-button" type="button" data-product="alfajor">Solicitar pedido</button></div></div>
+          </article>
+          <article class="product-card" data-id="caja-surtida" data-category="postres" data-search="caja surtida de postres seleccion pequeños compartir">
+            <img src="assets/images/caja-postres.svg" width="640" height="440" alt="Ilustración referencial de una caja surtida de postres" loading="lazy">
+            <div class="card-body"><p class="category">Postres</p><h3>Caja surtida de postres</h3><p>Selección demostrativa de pequeños postres para compartir.</p><p class="price">S/ 25.00 <span>por caja</span></p><div class="card-actions"><button class="button button-secondary detail-button" type="button" data-product="caja-surtida">Ver detalle</button><button class="button request-button" type="button" data-product="caja-surtida">Solicitar pedido</button></div></div>
+          </article>
+        </div>
+
+        <div id="empty-state" class="empty-state" hidden>
+          <h3>No encontramos productos con esa búsqueda</h3>
+          <p>Prueba con otra palabra o restablece el catálogo.</p>
+          <button id="reset-products" class="button" type="button">Ver todos los productos</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section" aria-labelledby="beneficios-titulo">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Una experiencia sencilla</p><h2 id="beneficios-titulo">Información clara para elegir</h2></div>
+        <div class="benefit-grid">
+          <article><span aria-hidden="true">01</span><h3>Compara opciones</h3><p>Revisa productos, categorías y precios referenciales en un solo lugar.</p></article>
+          <article><span aria-hidden="true">02</span><h3>Consulta los detalles</h3><p>Encuentra descripciones e información demostrativa de ingredientes y alérgenos.</p></article>
+          <article><span aria-hidden="true">03</span><h3>Solicita con claridad</h3><p>Indica producto, cantidad y fecha deseada mediante un formulario sencillo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-encargar" class="section section-blue" aria-labelledby="encargar-titulo">
+      <div class="container">
+        <div class="section-heading section-heading-light"><p class="eyebrow">Paso a paso</p><h2 id="encargar-titulo">Cómo realizar una solicitud</h2></div>
+        <ol class="steps">
+          <li><span>1</span><p>Explora el catálogo.</p></li>
+          <li><span>2</span><p>Revisa los detalles del producto.</p></li>
+          <li><span>3</span><p>Completa producto, cantidad y fecha deseada.</p></li>
+          <li><span>4</span><p>Envía la solicitud de prueba y consulta el resumen.</p></li>
+        </ol>
+        <p class="section-note">En una operación real, el negocio confirmaría posteriormente la disponibilidad y el precio final. En este proyecto no se generan pedidos comerciales.</p>
+      </div>
+    </section>
+
+    <section id="preguntas" class="section" aria-labelledby="preguntas-titulo">
+      <div class="container narrow">
+        <div class="section-heading"><p class="eyebrow">Resolvemos tus dudas</p><h2 id="preguntas-titulo">Preguntas frecuentes</h2></div>
+        <div class="faq-list">
+          <details><summary>¿Cómo puedo solicitar un producto?</summary><p>Elige un producto y completa el formulario con la cantidad y la fecha deseada. El envío es una simulación educativa.</p></details>
+          <details><summary>¿La solicitud confirma un pedido?</summary><p>No. Esta página solo simula una solicitud. En un negocio real, el pedido requeriría confirmación posterior.</p></details>
+          <details><summary>¿Los precios son definitivos?</summary><p>No. Son precios ficticios y referenciales utilizados para demostrar el funcionamiento del sitio.</p></details>
+          <details><summary>¿Puedo pagar desde esta página?</summary><p>No. El proyecto no incluye pagos, compras ni transacciones reales.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="solicitud" class="section section-white" aria-labelledby="solicitud-titulo">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <p class="eyebrow">Simulación local</p>
+          <h2 id="solicitud-titulo">Solicita tu producto</h2>
+          <p>Completa estos datos para probar el proceso. No necesitas ingresar información personal.</p>
+          <div class="privacy-notice"><strong>Antes de comenzar</strong><p>Usa únicamente datos ficticios. La solicitud se procesa solo en tu navegador; no se envía a un negocio ni se guarda en una base de datos. No ingreses datos personales ni datos de pago.</p></div>
+        </div>
+
+        <div class="form-panel">
+          <form id="request-form" novalidate>
+            <div class="field">
+              <label for="producto">Producto <span aria-hidden="true">*</span></label>
+              <select id="producto" name="producto" required aria-describedby="producto-error">
+                <option value="">Selecciona un producto</option>
+                <option value="masa-madre">Pan de masa madre</option>
+                <option value="croissant">Croissant de mantequilla</option>
+                <option value="torta-chocolate">Torta de chocolate</option>
+                <option value="pie-limon">Pie de limón</option>
+                <option value="alfajor">Alfajor de maicena</option>
+                <option value="caja-surtida">Caja surtida de postres</option>
+              </select>
+              <p id="producto-error" class="field-error"></p>
+            </div>
+            <div class="field">
+              <label for="cantidad">Cantidad <span aria-hidden="true">*</span></label>
+              <input id="cantidad" name="cantidad" type="number" min="1" step="1" inputmode="numeric" required aria-describedby="cantidad-error">
+              <p id="cantidad-error" class="field-error"></p>
+            </div>
+            <div class="field">
+              <label for="fecha">Fecha deseada <span aria-hidden="true">*</span></label>
+              <input id="fecha" name="fecha" type="date" required aria-describedby="fecha-help fecha-error">
+              <p id="fecha-help" class="field-help">Elige hoy o una fecha posterior.</p>
+              <p id="fecha-error" class="field-error"></p>
+            </div>
+            <p class="required-note">* Campos obligatorios</p>
+            <button class="button button-full" type="submit">Enviar solicitud de pedido</button>
+          </form>
+
+          <section id="confirmation" class="confirmation" aria-labelledby="confirmation-title" tabindex="-1" hidden>
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h3 id="confirmation-title">Solicitud de prueba recibida</h3>
+            <p>Recibimos tu solicitud de prueba. No se ha generado un pedido comercial ni se ha realizado ningún pago.</p>
+            <dl class="summary-list">
+              <div><dt>Referencia ficticia</dt><dd id="summary-reference"></dd></div>
+              <div><dt>Producto</dt><dd id="summary-product"></dd></div>
+              <div><dt>Cantidad</dt><dd id="summary-quantity"></dd></div>
+              <div><dt>Fecha deseada</dt><dd id="summary-date"></dd></div>
+              <div><dt>Precio unitario referencial</dt><dd id="summary-unit"></dd></div>
+              <div class="summary-total"><dt>Total estimado</dt><dd id="summary-total"></dd></div>
+            </dl>
+            <p class="fine-print">El total es demostrativo y no representa un cobro. El número mostrado es ficticio y no permite consultar un pedido real. Al recargar la página se pierde esta simulación.</p>
+            <div class="button-row"><a class="button button-secondary" href="#catalogo">Volver al catálogo</a><button id="new-request" class="button" type="button">Crear otra solicitud</button></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Dulce Horno</strong> — Proyecto educativo ficticio. Productos y precios demostrativos. Sin ventas ni pagos en línea.</p>
+      <nav aria-label="Navegación del pie de página"><a href="#catalogo">Catálogo</a><a href="#como-encargar">Cómo encargar</a><a href="#solicitud">Formulario</a></nav>
+    </div>
+  </footer>
+
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <button id="dialog-close" class="dialog-close" type="button" aria-label="Cerrar detalle del producto">×</button>
+      <div class="dialog-grid">
+        <img id="dialog-image" src="assets/images/pan-masa-madre.svg" width="640" height="440" alt="">
+        <div class="dialog-content">
+          <p id="dialog-category" class="category"></p>
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-description"></p>
+          <p id="dialog-price" class="price"></p>
+          <h3>Ingredientes de ejemplo</h3><p id="dialog-ingredients"></p>
+          <h3>Alérgenos demostrativos</h3><p id="dialog-allergens"></p>
+          <div class="dialog-notice">Ingredientes y alérgenos ficticios para fines educativos. En un negocio real, confirma la composición y el posible contacto cruzado antes de solicitar.</div>
+          <div class="button-row"><button id="dialog-request" class="button" type="button">Solicitar este producto</button><button id="dialog-back" class="button button-secondary" type="button">Cerrar y volver al catálogo</button></div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

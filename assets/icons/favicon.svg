@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="18" fill="#17365D"/>
+  <path d="M17 35c0-11 7-20 15-20s15 9 15 20v12H17Z" fill="#FFF4E6"/>
+  <path d="M25 17c1 7 4 10 7 10s6-3 7-10" fill="none" stroke="#C8654A" stroke-width="4" stroke-linecap="round"/>
+  <text x="32" y="43" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#17365D">DH</text>
+</svg>

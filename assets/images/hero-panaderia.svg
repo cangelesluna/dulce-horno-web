@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Mesa con panes y postres</title><desc id="desc">Ilustración cálida de una mesa de panadería con pan, croissants y una torta.</desc>
+  <rect width="720" height="560" rx="36" fill="#F8E5CD"/>
+  <circle cx="585" cy="92" r="52" fill="#EFC39C" opacity=".75"/>
+  <path d="M0 390h720v170H0z" fill="#C8654A"/>
+  <path d="M0 425c165-55 310 30 471-8 111-26 172-42 249-11v154H0z" fill="#AD503B" opacity=".46"/>
+  <ellipse cx="348" cy="417" rx="257" ry="38" fill="#733927" opacity=".22"/>
+  <path d="M97 337c8-78 62-132 132-132s124 54 132 132Z" fill="#D7903E" stroke="#9D5C2C" stroke-width="7"/>
+  <path d="M140 265c20 17 39 24 56 24m-33-58c17 25 42 39 67 41m-18-64c13 26 38 43 67 48" fill="none" stroke="#F7C573" stroke-width="13" stroke-linecap="round"/>
+  <path d="M391 348c-30-45-7-102 37-116 2-45 69-64 91-23 44-16 81 27 63 66 37 20 27 79-16 89Z" fill="#E7A94E" stroke="#A86B28" stroke-width="7"/>
+  <path d="M428 277c39 20 76 14 110-11m-127 57c60 22 109 17 153-16" fill="none" stroke="#F9D383" stroke-width="11" stroke-linecap="round"/>
+  <g transform="translate(450 324)"><path d="M0 69h181v30H0z" fill="#F3DFC8"/><path d="M12 7h157v64H12z" fill="#6B382B"/><path d="M12 20h157" stroke="#D98A67" stroke-width="15"/><circle cx="42" cy="5" r="10" fill="#C8654A"/><circle cx="91" cy="5" r="10" fill="#C8654A"/><circle cx="140" cy="5" r="10" fill="#C8654A"/></g>
+  <g fill="none" stroke="#17365D" stroke-width="8" stroke-linecap="round"><path d="M73 96c22-25 51-32 80-21"/><path d="M75 97c23 8 45 28 54 51"/><path d="M126 73c-3 27 5 52 22 70"/></g>
+</svg>
